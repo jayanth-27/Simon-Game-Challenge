@@ -51,7 +51,7 @@ function animatePress(currentColour)
     $("#"+currentColour).addClass("pressed");
     setTimeout(function(){$("#"+currentColour).removeClass("pressed");},100);
 }
-$(document).keypress(function(event){
+$(document).keydown(function(event){
     if(!started)
     {
         $("h1").text("Level "+level);
